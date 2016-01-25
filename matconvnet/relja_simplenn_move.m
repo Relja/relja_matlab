@@ -57,7 +57,7 @@ for l=1:numel(net.layers)
         else
             for f = {'weights', 'momentum'}
                 f = char(f) ;
-                if isprop(net.layers{l}, f)
+                if isfield(net.layers{l}, f) || isprop(net.layers{l}, f)
                     for j=1:numel(net.layers{l}.(f))
                         net.layers{l}.(f){j} = moveop(net.layers{l}.(f){j}) ;
                     end

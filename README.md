@@ -1,6 +1,6 @@
 # relja_matlab
 
-> Version 1.00 (03 Dec 2015)
+> Version 1.01 (29 Feb 2016)
 
 This library contains miscellaneous utilities written by Relja Arandjelović. It is used extensively in the [NetVLAD](https://github.com/Relja/netvlad) library.
 
@@ -17,8 +17,16 @@ are taken from the excellent [MatConvNet](http://www.vlfeat.org/matconvnet/) lib
 
 The functions related to MatConvNet (i.e. in folder `matconvnet`) clearly depend on:
 
-- [MatConvNet](http://www.vlfeat.org/matconvnet/) (tested using version 1.0-beta14)
+1. [MatConvNet](http://www.vlfeat.org/matconvnet/) (tested using version 1.0-beta14)
+
+2. Optional but **highly** recommended for speed if you want to use the `relja_retrievalMAP` function (it computes the mAP for retrieval; to not use this dependency, uncomment the relevant lines in the `relja_retrievalMAP.m` file): [Yael_matlab](http://yael.gforge.inria.fr/index.html) (tested using version 438)
+    - To download it's easiest to go [here](http://yael.gforge.inria.fr/index.html) and download the precompiled yael_matlab binaries for your OS (e.g. [yael_matlab_linux64_v438.tar.gz](https://gforge.inria.fr/frs/download.php/file/34218/yael_matlab_linux64_v438.tar.gz))
+
 
 # Changes
 
-- **1.00** Initial public release
+- **1.01** (29 Feb 2016)
+    - Added a few more functions needed for NetVLAD v1.01 (e.g. mAP computation)
+
+- **1.00** (04 Dec 2015)
+    - Initial public release
