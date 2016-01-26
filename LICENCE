@@ -1,5 +1,4 @@
-This licence applies to all files apart from:
-    matconvnet/relja_simplenn.m
+This licence applies to all file apart from:
     matconvnet/relja_simplenn_move.m
 For these, see matconvnet/LICENCE_matconvnet
 

@@ -7,7 +7,7 @@ function [outDim, sz]= relja_netOutputDim(net, imDim)
     % as long as this is not executed often
     
     if nargin<2
-        im= single(net.normalization.averageImage);
+        im= single(net.meta.normalization.averageImage);
     else
         if length(imDim)>3
             im= single(imDim);

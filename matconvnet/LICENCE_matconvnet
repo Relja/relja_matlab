@@ -1,6 +1,5 @@
-This licence applies to the following files:
+This licence applies to the following file:
     relja_simplenn_move.m
-    relja_simplenn.m
 They were taken from the MatConvNet library and modified by Relja Arandjelovic.
 
 Copyright (c) 2015 Relja Arandjelovic.
